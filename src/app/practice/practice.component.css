@@ -1,0 +1,25 @@
+.box {
+    width: 1300px;
+    height: 800px;
+    background-color: rgb(176, 94, 94);
+}
+
+.buttn {
+    border-radius: 8px;
+    background-color: rgb(200, 255, 0);
+}
+
+.button {
+    margin: 40px 200px;
+
+}
+
+input {
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+label, h1 {
+    margin-left: 20px;
+}

@@ -1,0 +1,121 @@
+.container {
+    display: grid;
+    height: 100vh;
+    /* grid-template-areas: "header header"
+                         "sidebar content"
+                         "footer footer"; */
+    grid-template-rows: 80px 1fr 80px;
+}
+
+.header {
+    display: flex;
+    float: right;
+    background-color: #fad3f7;
+    color: white;
+    flex-direction: row-reverse;
+    /* grid-area: header; */
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    color: white;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+}
+
+.sidebar {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    /* grid-area: sidebar; */
+}
+
+.sidebar:hover{
+    cursor: pointer;
+}
+
+.git_btn {
+    background-color: orange;
+    border-radius: 8px;
+    color: white;
+    padding: 2px;
+    font-size: small;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.content {
+    padding: 10px;
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    /* grid-area: content; */
+}
+
+.profile {
+    /* height: 150px; */
+    border: 1px solid orange;
+    display: flex;
+}
+
+.footer {
+    background-color: cadetblue;
+    color: white;
+    font-size: large;
+    font-family: sans-serif;
+    justify-content: center;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    /* grid-area: footer; */
+}
+
+.header_btn {
+    background: none;
+    font-size: medium;
+    border: none;
+    color: rgb(156, 26, 150);
+    margin-right: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.logo_btn {
+    margin-right: auto;
+    margin-left: 20px;
+
+}
+
+@media screen and (max-width: 276px) {
+    .header {
+        flex-direction: column-reverse;
+
+    }
+
+    .logo_btn {
+        flex-grow: 1;
+    
+    }
+    
+}
+
+.header_btn:hover {
+    cursor: pointer;
+}

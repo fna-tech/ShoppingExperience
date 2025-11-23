@@ -1,0 +1,11 @@
+.container {
+    background-color: #fad3f7;
+    color: rgb(156, 26, 150);
+    height: 100vh;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    font-size: xxx-large;
+    font-family: serif;
+
+}

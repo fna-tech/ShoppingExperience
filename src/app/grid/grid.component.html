@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="header">
+        <button type="button" class="header_btn">SIGNUP</button>
+        <button type="button" class="header_btn">LOGIN</button>
+        <button type="button" class="header_btn logo_btn">LOGO</button>
+    </div>
+    <div class="main">
+        <div class="sidebar">
+            @for(item of list_items; track item){
+                <div class="item">{{item}}</div>
+            }
+        </div>
+        <div class="content">
+            @for(profile of users_list$; track profile){
+                <div class="profile">
+                    <img [src]="profile.avatar_url" alt="">
+                    <div class="detail">
+                        <div class="name">{{profile.login}}</div>
+                        <div class="git_btn">Open Github</div>
+                    </div>
+                    
+                </div>
+            }
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+    
+
+</div>

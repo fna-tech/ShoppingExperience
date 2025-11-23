@@ -1,0 +1,13 @@
+<div class="header_container">
+    <div class="btn_container">
+        <button class="header_btn" type="button" routerLink="/register">SIGNUP</button>
+        <button class="header_btn" type="button" routerLink="/login">LOGIN</button>
+        <button class="header_btn" type="button" routerLink="/practice"> Examples Practice</button>
+        <button class="header_btn" type="button" routerLink="/css">CSS practice</button>
+        <button type="button" class="header_btn" (click)="loadComponent()">Lazy Load Component</button>
+        <button type="button" class="header_btn" routerLink="/rxjs">Rxjs practice</button>
+        <button class="header_btn" id="logo" type="button">LOGO</button>
+    </div>
+
+    <ng-container *ngComponentOutlet="advancedComponent"></ng-container>
+</div>

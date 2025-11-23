@@ -1,0 +1,41 @@
+<div class="main">
+    <div *ngIf="!isLoading">
+        <div class="users">
+            <div class="user" *ngFor="let user of users_list$">
+                <img class="img_cls" [src]="user.avatar_url" alt="">
+   
+                    <span class="user_name">
+                        {{user.login }}
+                        </span>
+                        <span class="btn_pos">
+    
+                        <button type="submit" class="github_btn" (click)="openProfile(user.html_url)">Open Github</button>
+                    </span>
+          
+                
+                
+               
+            </div>
+        </div>
+        <!-- <div class="users" *ngFor="let user of users_list$ | async">
+            <div class="user">
+                <span class="box">{{user}}</span>
+
+            </div>
+        </div> -->
+        <!-- <span class="image_class" *ngFor="let user of users_list$ | async">
+            <div>
+                <img src="{{user.avatar_url}}" alt="">
+            </div>
+            <div>
+                <label>{{user.login | prefix | titlecase }} </label>
+                <button type="button" (click)="openProfile(user.html_url)">Open Profile</button>
+            </div>
+           
+        </span> -->
+    </div>
+    
+    <div  *ngIf="isLoading" class="loader">Loading...</div>
+</div> 
+
+

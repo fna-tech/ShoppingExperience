@@ -1,0 +1,9 @@
+<div class="sidebar_container">
+    <!-- <div class="search_bar">The Shopping Experience</div> -->
+    @for(item of list_items; track item){
+        <div class="list_items" (click)="item_clicked(item)">{{item}}</div>
+    }
+
+</div>
+
+
